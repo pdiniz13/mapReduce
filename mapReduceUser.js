@@ -2,12 +2,12 @@ var conn = new Mongo("127.0.0.1:3001");
 var db = conn.getDB("meteor");
 
 var mapFunc = function() {
-  emit(this.serviceTypeID, {count: 1, serviceTime: this.serviceTime, products: this.products});
+  emit(this.agentID, {count: 1, serviceTime: this.serviceTime, products: this.products, agent: this.agentID});
 };
 
-var reduceFunc = function(serviceTypeID, info) {
+var reduceFunc = function(agentID, info) {
   var reducedVal = {count: 1, serviceTime: 0, totalProductsCount: 0, totalPerItem: {}, ratingTotal:0};
-  for (var idx = 0, count = info.length; idx < count; idx++) {
+  for (var idx = 0, count = info.length; idx < count; idx++){
     reducedVal.count += info[idx].count;
     reducedVal.serviceTime += info[idx].serviceTime;
     reducedVal.ratingTotal += info[idx].ratingTotal;
@@ -23,7 +23,6 @@ var reduceFunc = function(serviceTypeID, info) {
       }
     }
   }
-
   return reducedVal;
 };
 
@@ -33,12 +32,11 @@ var finalizeFunc = function (key, reducedVal) {
   return reducedVal;
 };
 
-
 db.tickets.mapReduce(
   mapFunc,
   reduceFunc,
   {
-    out: "allServicesStats",
+    out: "allUsersStats",
     finalize: finalizeFunc
   }
 );
