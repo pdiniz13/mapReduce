@@ -25,9 +25,9 @@
     <option name="FILTER_BY_CURRENT_PROJECT" value="true" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5997a9fc-e80f-464f-86c0-74a8f13f69c3" name="Default" comment="feature/mapReduce - Added mapReduce function for Users. Map Reduce is now complete, but the users need to be associated with the tickets, and ratings need to be added">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mapReduceUser.js" />
+    <list default="true" id="5997a9fc-e80f-464f-86c0-74a8f13f69c3" name="Default" comment="WIP-Trying to reduce the the ammoung of repeated code for map/reduce function">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mapReduce.js" afterPath="$PROJECT_DIR$/mapReduce.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mapReduceUser.js" afterPath="$PROJECT_DIR$/mapReduceUser.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="mongoMapReduce.iws" />
@@ -54,8 +54,8 @@
           <file leaf-file-name="mapReduceUser.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/mapReduceUser.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.30357143">
-                  <caret line="15" column="68" selection-start-line="15" selection-start-column="68" selection-end-line="15" selection-end-column="68" />
+                <state vertical-scroll-proportion="0.6708761">
+                  <caret line="50" column="29" selection-start-line="50" selection-start-column="29" selection-end-line="50" selection-end-column="29" />
                   <folding />
                 </state>
               </provider>
@@ -69,7 +69,7 @@
             <entry file="file://$PROJECT_DIR$/mapReduceUser.js">
               <provider selected="true" editor-type-id="text-editor">
                 <state vertical-scroll-proportion="0.0">
-                  <caret line="8" column="30" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
+                  <caret line="9" column="32" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
                   <folding />
                 </state>
               </provider>
@@ -78,8 +78,8 @@
           <file leaf-file-name="mapReduce.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/mapReduce.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.55">
-                  <caret line="22" column="7" selection-start-line="22" selection-start-column="7" selection-end-line="22" selection-end-column="7" />
+                <state vertical-scroll-proportion="0.5635359">
+                  <caret line="34" column="4" selection-start-line="34" selection-start-column="4" selection-end-line="34" selection-end-column="4" />
                   <folding />
                 </state>
               </provider>
@@ -102,8 +102,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/mapReduceUser.js" />
+        <option value="$PROJECT_DIR$/mapReduceCurrentMonth.js" />
         <option value="$PROJECT_DIR$/mapReduce.js" />
+        <option value="$PROJECT_DIR$/mapReduceUser.js" />
       </list>
     </option>
   </component>
@@ -173,6 +174,11 @@
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.General" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="FullScreen" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration default="true" type="BashConfigurationType" factoryName="Bash">
@@ -247,7 +253,13 @@
       <option name="project" value="LOCAL" />
       <updated>1433272325740</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="feature/mapReduce - Added mapReduce function for Users. Map Reduce is now complete, but the users need to be associated with the tickets, and ratings need to be added">
+      <created>1433279259558</created>
+      <option name="number" value="00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1433279259558</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -256,7 +268,7 @@
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="DB Browser" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32972974" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32972974" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="DB Execution Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -295,7 +307,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="feature/mapReduce - Added mapReduce function for Services database, these are still not marked by month though" />
     <MESSAGE value="feature/mapReduce - Added mapReduce function for Users. Map Reduce is now complete, but the users need to be associated with the tickets, and ratings need to be added" />
-    <option name="LAST_COMMIT_MESSAGE" value="feature/mapReduce - Added mapReduce function for Users. Map Reduce is now complete, but the users need to be associated with the tickets, and ratings need to be added" />
+    <MESSAGE value="WIP-Trying to reduce the the ammoung of repeated code for map/reduce function" />
+    <option name="LAST_COMMIT_MESSAGE" value="WIP-Trying to reduce the the ammoung of repeated code for map/reduce function" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -342,18 +355,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mapReduceUser.js">
+    <entry file="file://$PROJECT_DIR$/mapReduce.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="30" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
+        <state vertical-scroll-proportion="0.5635359">
+          <caret line="34" column="4" selection-start-line="34" selection-start-column="4" selection-end-line="34" selection-end-column="4" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mapReduce.js">
+    <entry file="file://$PROJECT_DIR$/mapReduceUser.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.55">
-          <caret line="22" column="7" selection-start-line="22" selection-start-column="7" selection-end-line="22" selection-end-column="7" />
+        <state vertical-scroll-proportion="0.6708761">
+          <caret line="50" column="29" selection-start-line="50" selection-start-column="29" selection-end-line="50" selection-end-column="29" />
           <folding />
         </state>
       </provider>
