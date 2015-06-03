@@ -54,9 +54,13 @@ var mapReduce = function(indexName, outputFile, range) {
     return mapFunc;
   };
   db.tickets.mapReduce(
-    newFunc(indexName),
+    mapFunc,
     reduceFunc,
     queryOptions
+  );
+
+  db.tickets.mapReduce(
+
   );
 };
 
